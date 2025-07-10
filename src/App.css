@@ -1,0 +1,90 @@
+body, html, .App {
+  font-family: Arial, sans-serif;
+  background: #f7f7f7;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+.App {
+  max-width: 420px;
+  margin: 40px auto;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  padding: 32px 24px 24px 24px;
+}
+h1 {
+  margin-top: 0;
+  font-size: 1.7rem;
+  color: #2d3a4b;
+}
+form {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 18px;
+}
+input[type="text"] {
+  flex: 1;
+  padding: 8px 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+button {
+  padding: 8px 18px;
+  background: #2d8cff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+button:disabled {
+  background: #b3d1ff;
+  cursor: not-allowed;
+}
+.spinner {
+  margin: 12px 0;
+  color: #2d8cff;
+  font-weight: bold;
+}
+.result {
+  margin: 18px 0 10px 0;
+  padding: 14px 12px;
+  border-radius: 6px;
+  font-size: 1.1rem;
+}
+.result.safe {
+  background: #e6fbe6;
+  color: #1a7f1a;
+  border: 1px solid #b2e6b2;
+}
+.result.phishing {
+  background: #ffeaea;
+  color: #c0392b;
+  border: 1px solid #ffb3b3;
+}
+.result.suspicious {
+  background: #fffbe6;
+  color: #b38f00;
+  border: 1px solid #ffe299;
+}
+.result.error {
+  background: #fbeaea;
+  color: #a94442;
+  border: 1px solid #f5c6cb;
+}
+.history {
+  margin-top: 24px;
+}
+.history ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.history li {
+  font-size: 0.98rem;
+  padding: 4px 0;
+  border-bottom: 1px solid #f0f0f0;
+} 
